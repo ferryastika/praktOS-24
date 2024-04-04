@@ -51,7 +51,7 @@ perhatikan bahwa :
 Manual: `$ man 3 exec`
 
 ## 1. Fork : Parent - Child Process
-- Buat tulisan tentang konsep **fork**  dan implementasinya dengan menggunakan bahasa pemrograman CPP! (minimal 2 paragraf disertai dengan gambar)
+- Buat tulisan tentang konsep **fork**  dan implementasinya dengan menggunakan bahasa pemrograman C! (minimal 2 paragraf disertai dengan gambar)
 - Akses dan clonning repo : https://github.com/ferryastika/operatingsystem.git
 - Deskripsikan dan visualisasikan pohon proses hasil eksekusi dari kode program `fork01.c`, `fork02.c`, `fork03.c`, `fork04.c`, `fork05.c`dan `fork06.c`.
 
