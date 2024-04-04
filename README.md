@@ -55,3 +55,6 @@ Manual: `$ man 3 exec`
 - Akses dan clonning repo : https://github.com/ferryastika/operatingsystem.git
 - Deskripsikan dan visualisasikan pohon proses hasil eksekusi dari kode program `fork01.c`, `fork02.c`, `fork03.c`, `fork04.c`, `fork05.c`dan `fork06.c`.
 
+
+## 2. Tugas
+Buatlah program perkalian 2 matriks [4 x 4] dalam bahasa C yang memanfaatkan `fork()`. 
