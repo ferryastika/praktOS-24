@@ -18,11 +18,40 @@ classDiagram
       class Child_Process{
           PID=4901
           PPID = 4900
-          nano
+          fork01
       }
    ```
 
+   Perhatikan, ppid dari proses `fork01` adalah pid dari proses `bash`.
+
+**fork** digunakan untuk menduplikasi proses. Proses yang baru disebut dengan child proses, sedangkan proses pemanggil disebut dengan parent proses. Spesifikasi fork bisa dilihat dengan `$ man 2 fork`. 
+```
+int main() { 
+                            pid: 2308, ppid: 10 
+                             [Main process]
+                                 |
+  fork();              > Child process created <
+                                 +
+                               /   \
+                             /       \
+               pid: 2308, ppid: 10    pid: 30, ppid: 2308
+                [Parent Process]    [Child Process]
+
+  return 0;
+}
+```
+perhatikan bahwa :
+- `pid` Parent Process == `ppid` Child
+- `child_id` Parent Process == `pid` Child Process
+
+**Exec** adalah function yang digunakan untuk menjalankan program baru dan mengganti program yang sedang berlangsung. `exec` adalah program family yang memiliki berbagai fungsi variasi, yaitu `execvp`, `execlp`, `execv`, dan lain lain.
+
+**wait** adalah function yang digunakan untuk mendapatkan informasi ketika child proses berganti _state_-nya. Pergantian state dapat berupa _termination_, _resume_, atau _stop_.
+
+Manual: `$ man 3 exec`
 
 ## 1. Fork : Parent - Child Process
-a)  Buat tulisan tentang konsep **fork**  dan implementasinya dengan menggunakan bahasa pemrograman CPP! (minimal 2 paragraf disertai dengan gambar)
-b) Akses dan clonning repo : https://github.com/ferryastika/operatingsystem.git
+- Buat tulisan tentang konsep **fork**  dan implementasinya dengan menggunakan bahasa pemrograman CPP! (minimal 2 paragraf disertai dengan gambar)
+- Akses dan clonning repo : https://github.com/ferryastika/operatingsystem.git
+- Deskripsikan dan visualisasikan pohon proses hasil eksekusi dari kode program `fork01.c`, `fork02.c`, `fork03.c`, `fork04.c`, `fork05.c`dan `fork06.c`.
+
