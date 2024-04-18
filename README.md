@@ -1,4 +1,4 @@
-# Process - Fork - Multithread
+# 1. Process - Fork - Multithread
 Setiap program atau bagian dari program yang sedang dieksekusi oleh CPU disebut dengan proses. Proses dapat berjalan secara _foreground_ atau _background_. 
 
 Untuk melihat seluruh proses yang sedang berjalan gunakan perintah `$ ps -e` .
@@ -58,3 +58,6 @@ Manual: `$ man 3 exec`
 
 ## 2. Tugas
 Buatlah program perkalian 2 matriks [4 x 4] dalam bahasa C yang memanfaatkan `fork()`. 
+
+# 2. Pemrograman SHELL
+Ikuti tutotial SHELL Programming : https://www.w3schools.io/terminal/bash-tutorials/. Terjemahkan, coba contohnya dan tuliskan dalam bentuk laporan!
